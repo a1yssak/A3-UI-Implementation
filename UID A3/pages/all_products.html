@@ -25,7 +25,11 @@
         </aside>
 
         <div class="product-grid">
-            <a href="jug.html"><button class="product product1">jug</button></a>
+            <button class="product product1" data-title="Enorme Jug" data-desc="Standing tall, this divine jug will showcase your dried arrangement, fresh flowers, water
+                or stand proudly on her own!" data-img="style/images/jug.png">
+                Jug
+            </button>
+
             <a href="product2.html"><button class="product product2">2</button></a>
             <a href="product3.html"><button class="product product3">3</button></a>
             <a href="product4.html"><button class="product product4">4</button></a>
@@ -44,13 +48,15 @@
     <!--product pop up-->
     <div id="overlay" class="overlay">
         <div class="overlay-content">
-            <span id="closeBtn" class="close-btn">close</span>
-            <h2 id="overlayTitle">item title/h2>
-                <img id="overlayImage" src="" alt="product image" />
-                <p id="overlayDescription">description</p>
-                <button id="buyBtn">ADD TO CART</button>
+            <span id="closeBtn" class="close-btn">X</span>
+            <h2 id="overlayTitle">item title</h2>
+            <img id="overlayImage" src="" alt="product image" />
+            <p id="overlayDescription">description</p>
+            <button id="buyBtn">ADD TO CART</button>
         </div>
     </div>
+
+    <script src="script/script1.js"></script>
 
 </body>
 

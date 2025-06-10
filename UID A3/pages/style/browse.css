@@ -76,6 +76,51 @@ body {
     cursor: pointer;
 }
 
+.overlay {
+    display: none;
+    display: flex;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.overlay-content {
+    background: #D9D9D9;
+    padding: 20px;
+    width: 700px;
+    height: 350px;
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+}
+
+.overlay-img {
+    width: 100px;
+    height: 300px;
+    height: auto;
+    border-radius: 15px;
+    float: left;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+
 .product1 {
     background-image: url('images/jug.png');
 }
