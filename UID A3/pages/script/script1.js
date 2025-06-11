@@ -7,6 +7,7 @@ const cartOverlay = document.getElementById('cartOverlay');
 const closeCartBtn = document.getElementById('closeCartBtn');
 const buyBtn = document.getElementById('buyBtn');
 
+/* VIEW PRODUCT OVERLAY */
 document.querySelectorAll('.product').forEach(button => {
     button.addEventListener('click', () => {
         const name = button.dataset.name;
@@ -35,6 +36,7 @@ overlay.addEventListener('click', (e) => {
     }
 });
 
+/* CART OVERLAY */
 buyBtn.addEventListener('click', () => {
     cartOverlay.classList.add('active');
 
@@ -63,7 +65,7 @@ function addItemToCart(product) {
             <p class="cart-item-name">${product.name}</p>
             <p class="cart-item-price" data-price="${product.price}">$${product.price}</p>
         </div>
-        <span class="remove-item">✕</span>
+        <span class="remove-item">x</span>
     `;
 
     // remove item
@@ -75,37 +77,43 @@ function addItemToCart(product) {
 
     cartItems.appendChild(item);
     updateCartTotal();
+
+    //where is this info going 
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+    // add the new product
+    cart.push(product);
+
+    localStorage.setItem('cart', JSON.stringify(cart));
 }
 
 //calculate total
 function updateCartTotal() {
     let total = 0;
-    let prices = document.querySelectorAll('.cart-item-price');
+    const prices = document.querySelectorAll('.cart-item-price');
 
     for (let i = 0; i < prices.length; i++) {
-        let price = parseFloat(prices[i].dataset.price);
-        total = total + price;
+        total += parseFloat(prices[i].dataset.price);
     }
 
-    let totalText = document.getElementById('cartTotal');
+    const totalText = document.getElementById('cartTotal');
     totalText.textContent = 'total: $' + total.toFixed(2);
-}
 
+    localStorage.setItem('cartTotal', total.toFixed(2));
+}
 
 const newItem = document.createElement('div');
 newItem.classList.add('cart-item');
-
-// image
 const img = document.createElement('img');
+
 img.src = productData.img;
 img.alt = productData.name;
 img.classList.add('cart-item-image');
 
-// details container
 const details = document.createElement('div');
+
 details.classList.add('cart-item-details');
 
-// name and price
 const name = document.createElement('p');
 name.classList.add('cart-item-name');
 name.textContent = productData.name;
@@ -123,3 +131,42 @@ newItem.appendChild(details);
 
 // add to the cart
 cartItems.appendChild(newItem);
+
+/* FINAL CHECK OUT */
+// get stored data
+const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+
+const finalCart = document.getElementById('finalCart');
+const totalDisplay = document.getElementById('finalTotal');
+
+let total = 0;
+
+for (let i = 0; i < cartItems.length; i++) {
+    const item = cartItems[i];
+
+    const itemDiv = document.createElement('div');
+    itemDiv.className = 'cart-item';
+
+    const img = document.createElement('img');
+    img.src = item.img;
+    img.alt = item.name;
+    img.className = 'cart-item-image';
+
+    const name = document.createElement('div');
+    name.className = 'cart-item-name';
+    name.textContent = item.name;
+
+    const price = document.createElement('div');
+    price.className = 'cart-item-price';
+    price.textContent = '$' + parseFloat(item.price).toFixed(2);
+
+    itemDiv.appendChild(img);
+    itemDiv.appendChild(name);
+    itemDiv.appendChild(price);
+
+    finalCart.appendChild(itemDiv);
+
+    total += parseFloat(item.price);
+}
+
+totalDisplay.textContent = 'total: $' + total.toFixed(2);
