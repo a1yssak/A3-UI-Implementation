@@ -126,11 +126,13 @@ body {
     margin-bottom: 5px;
 }
 
-.close-btn {
+#closeBtn {
     position: absolute;
     right: 15px;
     cursor: pointer;
     font-size: 30px;
+    color: #ffffff;
+    font-weight: bold;
 }
 
 
@@ -187,6 +189,7 @@ body {
 h3 {
     color: #ffffff;
     font-size: 50px;
+    margin-top: 20px;
 }
 
 .cart-overlay {
@@ -199,7 +202,7 @@ h3 {
     z-index: 1100;
     display: flex;
     flex-direction: column;
-    transition: right 0.5s ease-in-out;
+    transition: right 0.3s ease-in-out;
 }
 
 .cart-overlay.active {
@@ -209,17 +212,68 @@ h3 {
 .cart-items {
     flex: 1;
     padding: 20px;
+    margin-left: 50px;
 }
 
 #checkoutBtn {
-    padding: 10px 20px;
+    padding: 20px 40px;
     background-color: #ffffff #000000;
     border: none;
-    border-radius: 15px;
+    border-radius: 25px;
     cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 100px;
+}
+
+
+.cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-left: 50px;
+}
+
+
+.cart-footer {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
 }
 
 .close-btn {
+    position: absolute;
+    right: 15px;
     cursor: pointer;
-    font-size: 24px;
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.cart-item-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.cart-item-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-item-name {
+    font-size: 20px;
+}
+
+.cart-item-price {
+    color: #000000;
 }
