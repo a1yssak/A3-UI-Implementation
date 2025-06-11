@@ -209,24 +209,6 @@ h3 {
     right: 0;
 }
 
-.cart-items {
-    flex: 1;
-    padding: 20px;
-    margin-left: 50px;
-}
-
-#checkoutBtn {
-    padding: 20px 40px;
-    background-color: #ffffff #000000;
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 100px;
-}
-
-
 .cart-header {
     display: flex;
     justify-content: space-between;
@@ -235,22 +217,36 @@ h3 {
     margin-left: 50px;
 }
 
+.cart-items {
+    flex: 1;
+    padding: 20px;
+    margin-left: 50px;
+}
 
 .cart-footer {
     padding: 30px;
     display: flex;
     justify-content: center;
-}
-
-.close-btn {
-    position: absolute;
-    right: 15px;
-    cursor: pointer;
+    align-items: center;
+    flex-direction: column;
     font-size: 30px;
     color: #ffffff;
     font-weight: bold;
 }
 
+#checkoutBtn {
+    padding: 20px 40px;
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* cart item */
 .cart-item {
     display: flex;
     align-items: center;
@@ -276,4 +272,26 @@ h3 {
 
 .cart-item-price {
     color: #000000;
+}
+
+/* remove button */
+.remove-item {
+    margin-left: auto;
+    cursor: pointer;
+    font-size: 18px;
+    color: #9a9898;
+}
+
+.remove-item:hover {
+    color: #000000;
+}
+
+/* close button for cart */
+.close-btn {
+    position: absolute;
+    right: 15px;
+    cursor: pointer;
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: bold;
 }

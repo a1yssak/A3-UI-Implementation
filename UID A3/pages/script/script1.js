@@ -51,18 +51,75 @@ closeCartBtn.addEventListener('click', () => {
     cartOverlay.classList.remove('active');
 });
 
-function addItemToCart(productData) {
+function addItemToCart(product) {
     const cartItems = document.getElementById('cartItems');
-    const newItem = document.createElement('div');
-    newItem.classList.add('cart-item');
 
-    newItem.innerHTML = `
-        <img src="${productData.img}" alt="${productData.name}" class="cart-item-image" />
+    const item = document.createElement('div');
+    item.className = 'cart-item';
+
+    item.innerHTML = `
+        <img src="${product.img}" alt="${product.name}" class="cart-item-image">
         <div class="cart-item-details">
-            <p class="cart-item-name">${productData.name}</p>
-            <p class="cart-item-price">$${productData.price}</p>
+            <p class="cart-item-name">${product.name}</p>
+            <p class="cart-item-price" data-price="${product.price}">$${product.price}</p>
         </div>
+        <span class="remove-item">✕</span>
     `;
 
-    cartItems.appendChild(newItem);
+    // remove item
+    const removeBtn = item.querySelector('.remove-item');
+    removeBtn.addEventListener('click', () => {
+        item.remove();
+        updateCartTotal();
+    });
+
+    cartItems.appendChild(item);
+    updateCartTotal();
 }
+
+//calculate total
+function updateCartTotal() {
+    let total = 0;
+    let prices = document.querySelectorAll('.cart-item-price');
+
+    for (let i = 0; i < prices.length; i++) {
+        let price = parseFloat(prices[i].dataset.price);
+        total = total + price;
+    }
+
+    let totalText = document.getElementById('cartTotal');
+    totalText.textContent = 'total: $' + total.toFixed(2);
+}
+
+
+const newItem = document.createElement('div');
+newItem.classList.add('cart-item');
+
+// image
+const img = document.createElement('img');
+img.src = productData.img;
+img.alt = productData.name;
+img.classList.add('cart-item-image');
+
+// details container
+const details = document.createElement('div');
+details.classList.add('cart-item-details');
+
+// name and price
+const name = document.createElement('p');
+name.classList.add('cart-item-name');
+name.textContent = productData.name;
+
+const price = document.createElement('p');
+price.classList.add('cart-item-price');
+price.textContent = '$' + productData.price;
+price.dataset.price = productData.price;
+
+details.appendChild(name);
+details.appendChild(price);
+
+newItem.appendChild(img);
+newItem.appendChild(details);
+
+// add to the cart
+cartItems.appendChild(newItem);
