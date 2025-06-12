@@ -1,5 +1,4 @@
 /* FINAL CHECK OUT */
-// get stored data
 const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
 
 const finalCart = document.getElementById('finalCart');
@@ -36,3 +35,9 @@ for (let i = 0; i < cartItems.length; i++) {
 }
 
 totalDisplay.textContent = 'total: $' + total.toFixed(2);
+
+/*checkout complete and clear cart 
+not working needs to be fixed
+
+localStorage.removeItem('cart');
+ */

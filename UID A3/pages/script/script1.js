@@ -54,7 +54,7 @@ closeCartBtn.addEventListener('click', () => {
     cartOverlay.classList.remove('active');
 });
 
-function addItemToCart(product) {
+function addItemToCart(product, saveToStorage = true) {
     const cartItems = document.getElementById('cartItems');
 
     const item = document.createElement('div');
@@ -69,23 +69,24 @@ function addItemToCart(product) {
         <span class="remove-item">x</span>
     `;
 
-    // remove item
     const removeBtn = item.querySelector('.remove-item');
     removeBtn.addEventListener('click', () => {
         item.remove();
         updateCartTotal();
+
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+        cart = cart.filter(p => p.name !== product.name || p.price !== product.price);
+        localStorage.setItem('cart', JSON.stringify(cart));
     });
 
     cartItems.appendChild(item);
     updateCartTotal();
 
-    //where is this info going 
-    let cart = JSON.parse(localStorage.getItem('cart')) || [];
-
-    // add the new product
-    cart.push(product);
-
-    localStorage.setItem('cart', JSON.stringify(cart));
+    if (saveToStorage) {
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+        cart.push(product);
+        localStorage.setItem('cart', JSON.stringify(cart));
+    }
 }
 
 //calculate total
@@ -103,33 +104,9 @@ function updateCartTotal() {
     localStorage.setItem('cartTotal', total.toFixed(2));
 }
 
-const newItem = document.createElement('div');
-newItem.classList.add('cart-item');
-const img = document.createElement('img');
+//cart saved items 
+const savedCart = JSON.parse(localStorage.getItem('cart')) || [];
 
-img.src = productData.img;
-img.alt = productData.name;
-img.classList.add('cart-item-image');
-
-const details = document.createElement('div');
-
-details.classList.add('cart-item-details');
-
-const name = document.createElement('p');
-name.classList.add('cart-item-name');
-name.textContent = productData.name;
-
-const price = document.createElement('p');
-price.classList.add('cart-item-price');
-price.textContent = '$' + productData.price;
-price.dataset.price = productData.price;
-
-details.appendChild(name);
-details.appendChild(price);
-
-newItem.appendChild(img);
-newItem.appendChild(details);
-
-// add to the cart
-cartItems.appendChild(newItem);
-
+for (let i = 0; i < savedCart.length; i++) {
+    addItemToCart(savedCart[i], false);
+}

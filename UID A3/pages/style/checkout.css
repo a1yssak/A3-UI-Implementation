@@ -10,7 +10,6 @@ body {
 .checkout-container {
     background-color: #262623;
     padding: 30px;
-    border-radius: 12px;
     width: 100%;
     max-width: 600px;
 }
@@ -19,6 +18,8 @@ h1 {
     text-align: center;
     color: #ffffff;
     font-size: 70px;
+    margin-bottom: 100px;
+    margin-top: 5px;
 }
 
 .cart-item {
@@ -32,14 +33,17 @@ h1 {
     margin-right: 15px;
     object-fit: cover;
     border-radius: 10px;
+    margin-bottom: 20px;
 }
 
 .cart-item-name {
-    font-size: 20px;
+    font-size: 15px;
     color: #ffffff;
+    margin-left: 15px;
 }
 
 .cart-item-price {
+    margin: 10px;
     font-weight: bold;
     color: #ffffff;
 }

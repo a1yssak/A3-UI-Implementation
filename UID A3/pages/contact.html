@@ -4,15 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="style/catalogue.css">
+    <title>contact</title>
+    <link rel="stylesheet" href="style/info.css">
     <link rel="stylesheet" href="style/navigation.css">
-
-    <title>catalog</title>
 </head>
 
 <body>
-    <h1>shop our store</h1><br>
+    <h1>contact</h1><br>
 
     <!-- NAVIGATION MENU -->
     <header>
@@ -29,17 +27,25 @@
                     <li><a href="search.html">search</a></li>
                 </ul>
         </nav>
-
     </header>
 
-    <a href="all_products.html" class="menu-button all-products">all products</a>
-    <a href="artisan.html" class="menu-button artisan">artisan</a>
-    <a href="garden.html" class="menu-button garden">garden</a><br>
-    <a href="homewares.html" class="menu-button homewares">homewares</a>
-    <a href="indoor plants.html" class="menu-button indoor-plants">indoor plants</a>
-    <a href="gifting.html" class="menu-button gifting">gifting</a><br>
+    <p>phone number: <br>0407 364 702<br><br>
+        email: <u>podandseed@gmail.com</u><br><br><br>
+        <b>get in touch:</b>
+    </p>
 
-    <script src="script/nav.js"></script>
+    <form class="contact-form" action="#" method="post">
+        <input type="text" id="name" name="name" placeholder="Name" required />
+
+        <input type="email" id="email" name="email" placeholder="Email" required />
+
+        <textarea id="message" name="message" placeholder="Message" rows="5" required></textarea>
+
+        <button type="submit">SEND</button>
+    </form>
+
+    <script src="script/nav.js">
+    </script>
 </body>
 
 </html>
