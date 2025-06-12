@@ -1,18 +1,31 @@
 body {
+    background-image: url('images/home_back.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
     background-color: #262623;
     font-family: Helvetica, sans-serif;
 }
 
 
-h1 {
+h1.top {
     position: relative;
     color: #ffffff;
     text-align: center;
     font-size: 120px;
     opacity: 0.65;
-    margin: 0.1px;
+    margin-top: 60x;
+    margin-bottom: 0.1px;
 }
 
+h1.bottom {
+    color: #ffffff;
+    text-align: center;
+    font-size: 120px;
+    opacity: 0.65;
+    margin-top: 0.1px;
+}
 
 
 h2 {
@@ -27,7 +40,7 @@ p {
     font-size: 16px;
 }
 
-div {
+section {
     position: relative;
     width: 280px;
     padding-top: 1px;
@@ -48,12 +61,4 @@ div {
         font-size: 18px;
     }
 
-}
-
-body {
-    background-image: url('images/home_back.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-blend-mode: overlay;
 }

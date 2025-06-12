@@ -1,25 +1,9 @@
-/* this isn't working
-heading {
-    nav {
-        button {
-            background-image: url('images/menu.png');
-            background-size: 110px;
-            background-color: #262623;
-            width: 63px;
-            height: 65px;
-            cursor: pointer;
-            border-radius: 8px;
-        }
-    }
-}*/
-
-
 h1 {
     position: center;
     color: #ffffff;
     text-align: center;
     font-size: 100px;
-    margin: 50px;
+    margin-top: 50px;
 }
 
 body {
