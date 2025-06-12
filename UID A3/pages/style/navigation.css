@@ -1,0 +1,46 @@
+#navBtn {
+    background-image: url('images/menu.png');
+    background-size: 60px;
+    background-color: transparent;
+    width: 63px;
+    height: 63px;
+    cursor: pointer;
+    border: none;
+    margin-left: 90%;
+}
+
+.nav-overlay {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: transparent;
+    transition: right 0.3s ease;
+}
+
+.nav-overlay.active {
+    top: 0;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 60px 20px;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 80px;
+    align-items: center;
+    font-weight: bold;
+}
+
+.nav-links li {
+    margin: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #ffffff;
+}

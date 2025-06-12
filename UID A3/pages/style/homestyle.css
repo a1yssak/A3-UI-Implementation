@@ -3,33 +3,16 @@ body {
     font-family: Helvetica, sans-serif;
 }
 
-heading {
-    nav {
-        button {
-            background-image: url('images/menu.png');
-            background-size: 60px;
-            background-color: #262623;
-            width: 63px;
-            height: 65px;
-            cursor: pointer;
-            border-radius: 8px;
-            margin-left: 90%;
-            margin-top: 20px;
-            margin-right: 20px;
-            margin-bottom: 20px;
-        }
-    }
 
-    h1 {
-        position: relative;
-        color: #ffffff;
-        text-align: center;
-        font-size: 120px;
-        opacity: 0.65;
-        margin: 0.1px;
-    }
-
+h1 {
+    position: relative;
+    color: #ffffff;
+    text-align: center;
+    font-size: 120px;
+    opacity: 0.65;
+    margin: 0.1px;
 }
+
 
 
 h2 {
