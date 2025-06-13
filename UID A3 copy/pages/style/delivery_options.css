@@ -121,3 +121,72 @@ button[type="submit"] {
 p {
     color: #ffffff;
 }
+
+@media (max-width: 390px) {
+    body {
+        flex-direction: column;
+        padding: 20px;
+        align-items: center;
+    }
+
+    .checkout-container {
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .total-section {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .form-container {
+        max-width: 100%;
+        padding: 20px;
+        margin: 20px 0;
+    }
+
+    h2,
+    h3 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+        font-size: 14px;
+    }
+
+    .row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    button[type="submit"] {
+        margin-left: 0;
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .delivery-list {
+        font-size: 14px;
+    }
+
+    .delivery-option {
+        flex-direction: row;
+        gap: 8px;
+        padding: 8px;
+    }
+
+    p {
+        text-align: center;
+    }
+}

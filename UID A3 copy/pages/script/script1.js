@@ -3,9 +3,12 @@ const closeBtn = document.getElementById('closeBtn');
 const overlayTitle = document.getElementById('overlayTitle');
 const overlayImage = document.getElementById('overlayImage');
 const overlayDescription = document.getElementById('overlayDescription');
+const overlayPrice = document.getElementById('overlayPrice');
 const cartOverlay = document.getElementById('cartOverlay');
 const closeCartBtn = document.getElementById('closeCartBtn');
 const buyBtn = document.getElementById('buyBtn');
+const cartIcon = document.getElementById('cartIcon');
+
 
 
 /* VIEW PRODUCT OVERLAY */
@@ -22,6 +25,8 @@ document.querySelectorAll('.product').forEach(button => {
         overlayImage.alt = name;
 
         buyBtn.dataset.price = price;
+
+        overlayPrice.textContent = "$" + Number(price).toFixed(2);
 
         overlay.style.display = 'flex';
     });
@@ -110,3 +115,13 @@ const savedCart = JSON.parse(localStorage.getItem('cart')) || [];
 for (let i = 0; i < savedCart.length; i++) {
     addItemToCart(savedCart[i], false);
 }
+
+/* CART ICON IN HEADER */
+
+cartIcon.addEventListener('click', () => {
+    cartOverlay.classList.add('active');
+});
+
+closeCartBtn.addEventListener('click', () => {
+    cartOverlay.classList.remove('active');
+});

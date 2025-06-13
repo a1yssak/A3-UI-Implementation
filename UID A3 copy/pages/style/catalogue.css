@@ -84,36 +84,36 @@ body {
         color: #ffffff;
         font-size: 40px;
         font-weight: bold;
-
+        margin: 0px;
     }
 
     .all-products {
         background-image: url('images/all_products.png');
-        margin: 0px !important;
+        margin: 0px;
     }
 
     .artisan {
         background-image: url('images/artisan.png');
-        margin: 0px !important;
+        margin: 0px;
     }
 
     .garden {
         background-image: url('images/garden.png');
-        margin: 0px !important;
+        margin: 0px;
     }
 
     .homewares {
         background-image: url('images/homewares.png');
-        margin: 0px !important;
+        margin: 0px;
     }
 
     .indoor-plants {
         background-image: url('images/indoor_plants.png');
-        margin: 0px !important;
+        margin: 0px;
     }
 
     .gifting {
         background-image: url('images/gifting.png');
-        margin: 0px !important;
+        margin: 0px;
     }
 }

@@ -7,6 +7,7 @@
     <title>homewares</title>
     <link rel="stylesheet" href="style/browse.css">
     <link rel="stylesheet" href="style/navigation.css">
+    <link rel="stylesheet" href="style/cart.css">
 </head>
 
 <body>
@@ -28,7 +29,11 @@
                 </ul>
         </nav>
 
+        <div id="cartIcon" class="cart-icon"></div>
+
     </header>
+
+    <p id="productCount">110 Products</p>
     <div class="layout">
         <aside class="sidebar">
             <h2>categories</h2>
@@ -46,7 +51,7 @@
 
         <div class="product-grid">
             <button class="product product37" data-name="Ceramic Jug" data-price="35"
-                data-desc="Handcrafted ceramic jug with a natural finish—perfect for water or floral arrangements"
+                data-desc="Handcrafted ceramic jug with a natural finish, perfect for water or floral arrangements"
                 data-img="style/images/37.png">
                 Ceramic Jug
             </button>
@@ -89,23 +94,22 @@
             </button>
 
             <button class="product product40" data-name="Bee Jug" data-price="45"
-                data-desc="Delicate ceramic jug adorned with a hand-painted bee design" data-img="style/images/40.png">
+                data-desc="Delicate ceramic jug adorned with bee design" data-img="style/images/40.png">
                 Bee Jug
             </button>
 
             <button class="product product41" data-name="Fig Themed Plate" data-price="48"
-                data-desc="Ceramic plate featuring a hand-illustrated fig design" data-img="style/images/41.png">
+                data-desc="Plate featuring a hand illustrated fig design" data-img="style/images/41.png">
                 Fig Themed Plate
             </button>
 
             <button class="product product42" data-name="Bee Teacup" data-price="38"
-                data-desc="Charming teacup with bee motif, perfect for morning tea rituals"
-                data-img="style/images/42.png">
+                data-desc="Perfect for morning tea rituals" data-img="style/images/42.png">
                 Bee Teacup
             </button>
 
             <button class="product product43" data-name="Magnifying Glass" data-price="45"
-                data-desc="Elegant vintage-style magnifying glass with brass detailing" data-img="style/images/43.png">
+                data-desc="Elegant vintage style magnifying glass with wood detailing" data-img="style/images/43.png">
                 Magnifying Glass
             </button>
         </div>
@@ -121,6 +125,7 @@
             <div class="overlay-text">
                 <h2 id="overlayTitle">item title</h2>
                 <p id="overlayDescription">description</p>
+                <p id="overlayPrice">$0.00</p>
             </div>
             <img id="overlayImage" src="" alt="product image" />
             <button id="buyBtn">ADD TO CART</button>

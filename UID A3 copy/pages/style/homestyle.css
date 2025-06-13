@@ -67,7 +67,7 @@ section {
     display: none;
 }
 
-/* mobile design */
+/* MOBILE */
 @media screen and (max-width: 390px) {
     body {
         background-image: url('images/home_back.jpg');

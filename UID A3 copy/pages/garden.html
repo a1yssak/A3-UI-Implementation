@@ -7,6 +7,8 @@
     <title>garden</title>
     <link rel="stylesheet" href="style/browse.css">
     <link rel="stylesheet" href="style/navigation.css">
+    <link rel="stylesheet" href="style/cart.css">
+
 </head>
 
 <body>
@@ -28,7 +30,11 @@
                 </ul>
         </nav>
 
+        <div id="cartIcon" class="cart-icon"></div>
+
     </header>
+
+    <p id="productCount">35 Products</p>
 
     <div class="layout">
         <aside class="sidebar">
@@ -119,6 +125,7 @@
             <div class="overlay-text">
                 <h2 id="overlayTitle">item title</h2>
                 <p id="overlayDescription">description</p>
+                <p id="overlayPrice">$0.00</p>
             </div>
             <img id="overlayImage" src="" alt="product image" />
             <button id="buyBtn">ADD TO CART</button>
@@ -132,7 +139,6 @@
             <span id="closeCartBtn" class="close-btn">X</span>
         </div>
         <div id="cartItems" class="cart-items">
-            <!--products go here -->
         </div>
         <div class="cart-footer">
             <p id="cartTotal">total: $0</p>

@@ -97,3 +97,80 @@ p {
     color: #ffffff;
     text-align: center;
 }
+
+/*MOBIEL*/
+@media (max-width: 390px) {
+    h1 {
+        color: #ffffff;
+        text-align: center;
+        font-size: 40px;
+    }
+
+    body {
+        background-color: #343531;
+        font-family: helvetica;
+        margin: 0;
+        padding: 0;
+    }
+
+    .text-and-image {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        margin: 20px;
+    }
+
+    .image-container img {
+        width: 100%;
+        max-width: 320px;
+        height: 300px;
+    }
+
+    .text-container {
+        max-width: 90%;
+        text-align: center;
+        color: #ffffff;
+        font-size: 14px;
+    }
+
+    .contact-form {
+        max-width: 90%;
+        margin: 30px auto;
+        padding: 20px;
+    }
+
+    .contact-form input[type="text"] {
+        font-size: 14px;
+        padding: 8px 10px;
+        margin-left: 2px;
+
+    }
+
+
+    .contact-form input[type="email"] {
+        font-size: 14px;
+        padding: 8px 10px;
+        margin-left: 2px;
+
+    }
+
+    .contact-form textarea {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+
+    .contact-form button {
+        display: block;
+        width: 100%;
+        margin: 20px auto 0 auto;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    p {
+        color: #ffffff;
+        text-align: center;
+        font-size: 14px;
+    }
+}
