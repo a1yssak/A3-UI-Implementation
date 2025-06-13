@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>artisan</title>
+    <link rel="stylesheet" href="style/browse.css">
+    <link rel="stylesheet" href="style/navigation.css">
+</head>
+
+<body>
+    <h1>artisan</h1><br>
+
+    <!-- NAVIGATION MENU -->
+    <header>
+
+        <nav>
+            <button id="navBtn"></button>
+
+            <div id="navOverlay" class="nav-overlay">
+                <ul class="nav-links">
+                    <li><a href="home.html">home</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                    <li><a href="catalog.html">shop</a></li>
+                    <li><a href="search.html">search</a></li>
+                </ul>
+        </nav>
+
+    </header>
+
+    <div class="layout">
+        <aside class="sidebar">
+            <h2>categories</h2>
+            <ul>
+                <li><a href="all_products.html">all products</a></li>
+                <li><a href="garden.html">garden</a></li>
+                <li><a href="homewares.html">homewares</a></li>
+                <li><a href="indoor plants.html">indoor plants</a></li>
+                <u>
+                    <li><a href="artisan.html">artisan</a></li>
+                </u>
+                <li><a href="gifting.html">gifting</a></li>
+            </ul>
+        </aside>
+
+        <div class="product-grid">
+            <button class="product product25" data-name="Rock and Crystal Locket" data-price="80" data-desc="Polished brass casing and a 
+            rock crystal body which magnifies the contents - a pressed flower, leaf, photo, feather or beautiful 
+            on its own." data-img="style/images/1.png">
+                Rock and Crystal Locket
+            </button>
+
+            <button class="product product26" data-name="Artisan Grapes" data-desc="Handcrafted decorative glass grapes"
+                data-img="style/images/2.png" data-price="35">
+                Artisan Grapes
+            </button>
+
+            <button class="product product27" data-name="Handmade Earrings"
+                data-desc="Delicate handcrafted beaded earrings" data-img="style/images/3.png" data-price="20">
+                Handmade Earrings
+            </button>
+
+            <button class="product product28" data-name="Artisan Pillows"
+                data-desc="Soft, hand-stitched decorative pillows" data-img="style/images/4.png" data-price="50">
+                Artisan Pillows
+            </button>
+
+            <button class="product product29" data-name="Handmade Garden Pot"
+                data-desc="Terracotta pot made by local artist" data-img="style/images/5.png" data-price="40">
+                Handmade Garden Pot
+            </button>
+
+            <button class="product product30" data-name="Artisan Lemon" data-desc="Sculpted ceramic lemon for decor"
+                data-img="style/images/6.png" data-price="145">
+                Artisan Lemon
+            </button>
+
+            <button class="product product31" data-name="Assorted Pillows"
+                data-desc="A mix of vibrant patterned cushions" data-img="style/images/7.png" data-price="45">
+                Assorted Pillows
+            </button>
+
+            <button class="product product32" data-name="Handmade Paintings"
+                data-desc="Original acrylic artwork on canvas" data-img="style/images/8.png" data-price="60">
+                Handmade Paintings
+            </button>
+
+            <button class="product product33" data-name="Compass" data-desc="Vintage-style brass compass"
+                data-img="style/images/9.png" data-price="35">
+                Compass
+            </button>
+
+            <button class="product product34" data-name="Landscape Pillow"
+                data-desc="Pillow featuring a scenic landscape print" data-img="style/images/10.png" data-price="110">
+                Landscape Pillow
+            </button>
+
+            <button class="product product35" data-name="Key Chain" data-desc="Small handmade leather key ring"
+                data-img="style/images/11.png" data-price="12">
+                Key Chain
+            </button>
+
+            <button class="product product36" data-name="Heart Rug" data-desc="Cozy heart-shaped floor rug"
+                data-img="style/images/12.png" data-price="85">
+                Heart Rug
+            </button>
+
+        </div>
+    </div>
+
+    <!--product pop up-->
+    <div id="overlay" class="overlay">
+        <div class="overlay-content">
+            <span id="closeBtn" class="close-btn">X</span>
+            <div class="overlay-text">
+                <h2 id="overlayTitle">item title</h2>
+                <p id="overlayDescription">description</p>
+            </div>
+            <img id="overlayImage" src="" alt="product image" />
+            <button id="buyBtn">ADD TO CART</button>
+        </div>
+    </div>
+
+    <!-- cart pop up -->
+    <div id="cartOverlay" class="cart-overlay">
+        <div class="cart-header">
+            <h3>cart</h3>
+            <span id="closeCartBtn" class="close-btn">X</span>
+        </div>
+        <div id="cartItems" class="cart-items">
+            <!--products go here -->
+        </div>
+        <div class="cart-footer">
+            <p id="cartTotal">total: $0</p>
+            <a href="checkout.html"><button id="checkoutBtn">CHECK OUT</button></a>
+        </div>
+    </div>
+
+    <script src="script/script1.js"></script>
+    <script src="script/nav.js"></script>
+
+</body>
+
+</html>

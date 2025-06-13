@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>garden</title>
+    <link rel="stylesheet" href="style/browse.css">
+    <link rel="stylesheet" href="style/navigation.css">
+</head>
+
+<body>
+    <h1>garden</h1><br>
+
+    <!-- NAVIGATION MENU -->
+    <header>
+
+        <nav>
+            <button id="navBtn"></button>
+
+            <div id="navOverlay" class="nav-overlay">
+                <ul class="nav-links">
+                    <li><a href="home.html">home</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                    <li><a href="catalog.html">shop</a></li>
+                    <li><a href="search.html">search</a></li>
+                </ul>
+        </nav>
+
+    </header>
+
+    <div class="layout">
+        <aside class="sidebar">
+            <h2>categories</h2>
+            <ul>
+                <li><a href="all_products.html">all products</a></li>
+                <u>
+                    <li><a href="garden.html">garden</a></li>
+                </u>
+                <li><a href="homewares.html">homewares</a></li>
+                <li><a href="indoor plants.html">indoor plants</a></li>
+                <li><a href="artisan.html">artisan</a></li>
+                <li><a href="gifting.html">gifting</a></li>
+            </ul>
+        </aside>
+
+        <div class="product-grid">
+            <button class="product product13" data-name="Hand Hoe" data-price="25"
+                data-desc="Durable steel hand hoe for precise weeding and soil shaping" data-img="style/images/13.png">
+                Hand Hoe
+            </button>
+
+            <button class="product product14" data-name="Garden Rake" data-price="30"
+                data-desc="Compact garden rake ideal for tight garden beds and containers"
+                data-img="style/images/14.png">
+                Garden Rake
+            </button>
+
+            <button class="product product15" data-name="Rose Pruner" data-price="22"
+                data-desc="Sharp pruners for clean cuts, specially designed for rose stems"
+                data-img="style/images/15.png">
+                Rose Pruner
+            </button>
+
+            <button class="product product16" data-name="Garden Gloves" data-price="18"
+                data-desc="Comfort-fit gloves with reinforced palms for gardening" data-img="style/images/16.png">
+                Garden Gloves
+            </button>
+
+            <button class="product product17" data-name="Planting Trowel" data-price="20"
+                data-desc="Rust-resistant trowel for precise planting and digging" data-img="style/images/17.png">
+                Planting Trowel
+            </button>
+
+            <button class="product product18" data-name="Luxury Watering Can" data-price="65"
+                data-desc="Sleek, polished metal watering can for indoor/outdoor use" data-img="style/images/18.png">
+                Luxury Watering Can
+            </button>
+
+            <button class="product product19" data-name="Garden Hand Fork" data-price="28"
+                data-desc="Ergonomic hand fork for cultivating soil and removing weeds" data-img="style/images/19.png">
+                Garden Hand Fork
+            </button>
+
+            <button class="product product20" data-name="Dewit Gift Box Garden Tools" data-price="145"
+                data-desc="Premium gift box set with essential DeWit garden tools" data-img="style/images/20.png">
+                Dewit Gift Box Garden Tools
+            </button>
+
+            <button class="product product21" data-name="Garden Tools" data-price="110"
+                data-desc="Essential garden tools set for all basic gardening needs" data-img="style/images/21.png">
+                Garden Tools
+            </button>
+
+
+            <button class="product product22" data-name="Vintage Garden Hose Guide" data-price="48"
+                data-desc="Decorative and functional hose guide to protect your plants" data-img="style/images/22.png">
+                Vintage Garden Hose Guide
+            </button>
+
+            <button class="product product23" data-name="Garden Shovel" data-price="38"
+                data-desc="Sturdy shovel for planting and digging in all soil types" data-img="style/images/23.png">
+                Garden Shovel
+            </button>
+
+            <button class="product product24" data-name="Watering Can" data-price="45"
+                data-desc="Classic green watering can with detachable shower head" data-img="style/images/24.png">
+                Watering Can
+            </button>
+
+        </div>
+    </div>
+
+    <!--product pop up-->
+    <div id="overlay" class="overlay">
+        <div class="overlay-content">
+            <span id="closeBtn" class="close-btn">X</span>
+            <div class="overlay-text">
+                <h2 id="overlayTitle">item title</h2>
+                <p id="overlayDescription">description</p>
+            </div>
+            <img id="overlayImage" src="" alt="product image" />
+            <button id="buyBtn">ADD TO CART</button>
+        </div>
+    </div>
+
+    <!-- cart pop up -->
+    <div id="cartOverlay" class="cart-overlay">
+        <div class="cart-header">
+            <h3>cart</h3>
+            <span id="closeCartBtn" class="close-btn">X</span>
+        </div>
+        <div id="cartItems" class="cart-items">
+            <!--products go here -->
+        </div>
+        <div class="cart-footer">
+            <p id="cartTotal">total: $0</p>
+            <a href="checkout.html"><button id="checkoutBtn">CHECK OUT</button></a>
+        </div>
+    </div>
+
+    <script src="script/script1.js"></script>
+    <script src="script/nav.js"></script>
+
+</body>
+
+</html>

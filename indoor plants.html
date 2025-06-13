@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>indoor plants</title>
+    <link rel="stylesheet" href="style/browse.css">
+    <link rel="stylesheet" href="style/navigation.css">
+</head>
+
+<body>
+    <h1>indoor plants</h1><br>
+
+    <!-- NAVIGATION MENU -->
+    <header>
+
+        <nav>
+            <button id="navBtn"></button>
+
+            <div id="navOverlay" class="nav-overlay">
+                <ul class="nav-links">
+                    <li><a href="home.html">home</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                    <li><a href="catalog.html">shop</a></li>
+                    <li><a href="search.html">search</a></li>
+                </ul>
+        </nav>
+
+    </header>
+
+    <div class="layout">
+        <aside class="sidebar">
+            <h2>categories</h2>
+            <ul>
+                <li><a href="all_products.html">all products</a></li>
+                <li><a href="garden.html">garden</a></li>
+                <li><a href="homewares.html">homewares</a></li>
+                <u>
+                    <li><a href="indoor plants.html">indoor plants</a></li>
+                </u>
+                <li><a href="artisan.html">artisan</a></li>
+                <li><a href="gifting.html">gifting</a></li>
+            </ul>
+        </aside>
+
+        <div class="product-grid">
+            <button class="product product44" data-name="Peperomia Red Edge" data-price="30"
+                data-desc="Compact plant with striking red-edged leaves, ideal for indoor spaces"
+                data-img="style/images/44.png">
+                Peperomia Red Edge
+            </button>
+
+            <button class="product product45" data-name="Dieffenbachia Hybrid 'Star Bright'" data-price="35"
+                data-desc="Bright, lush foliage with variegated patterns—perfect for filtered light environments"
+                data-img="style/images/45.png">
+                Dieffenbachia 'Star Bright'
+            </button>
+
+            <button class="product product46" data-name="Syngonium Podophyllum Totem 'Arrow Head'" data-price="40"
+                data-desc="Vining plant with arrowhead-shaped leaves, great for indoor climbing support"
+                data-img="style/images/46.png">
+                Syngonium 'Arrow Head'
+            </button>
+
+            <button class="product product47" data-name="Assorted Succulents" data-price="10"
+                data-desc="Low-maintenance, water-wise succulents in a variety of colors and shapes"
+                data-img="style/images/47.png">
+                Assorted Succulents
+            </button>
+
+            <button class="product product48" data-name="Zamioculcas Zamiifolia (ZZ Plant)" data-price="30"
+                data-desc="Glossy-leafed, hardy plant that thrives in low-light conditions"
+                data-img="style/images/48.png">
+                ZZ Plant
+            </button>
+
+            <button class="product product49" data-name="Adiantum Fragrans (Maidenhair Fern)" data-price="65"
+                data-desc="Delicate, lacy foliage—this elegant fern adds softness to any room"
+                data-img="style/images/49.png">
+                Maidenhair Fern
+            </button>
+
+            <button class="product product50" data-name="Philodendron Micans" data-price="30"
+                data-desc="Velvety, heart-shaped leaves with trailing vines that glow in warm light"
+                data-img="style/images/50.png">
+                Philodendron Micans
+            </button>
+
+            <button class="product product51" data-name="Syngonium Podophyllum" data-price="45"
+                data-desc="Versatile arrowhead plant with fast-growing foliage and vibrant green tones"
+                data-img="style/images/51.png">
+                Syngonium Podophyllum
+            </button>
+
+            <button class="product product52" data-name="Rhapis Excelsa 'Lady Finger Palm'" data-price="110"
+                data-desc="Elegant palm with fan-shaped leaves, ideal for bright indirect light"
+                data-img="style/images/52.png">
+                Lady Finger Palm
+            </button>
+
+            <button class="product product53" data-name="Spathiphyllum Cochlearispathum (Peace Lily)" data-price="80"
+                data-desc="Classic indoor flowering plant known for air purification and white blooms"
+                data-img="style/images/53.png">
+                Peace Lily
+            </button>
+
+            <button class="product product54" data-name="Chain of Hearts" data-price="20"
+                data-desc="Trailing vine with delicate heart-shaped leaves—perfect for hanging baskets"
+                data-img="style/images/product54.png">
+                Chain of Hearts
+            </button>
+
+            <button class="product product55" data-name="Baby Rubberplant" data-price="40"
+                data-desc="Thick, glossy green leaves—this compact plant is both decorative and durable"
+                data-img="style/images/product55.png">
+                Baby Rubberplant
+            </button>
+
+        </div>
+    </div>
+
+    <!--product pop up-->
+    <div id="overlay" class="overlay">
+        <div class="overlay-content">
+            <span id="closeBtn" class="close-btn">X</span>
+            <div class="overlay-text">
+                <h2 id="overlayTitle">item title</h2>
+                <p id="overlayDescription">description</p>
+            </div>
+            <img id="overlayImage" src="" alt="product image" />
+            <button id="buyBtn">ADD TO CART</button>
+        </div>
+    </div>
+
+    <!-- cart pop up -->
+    <div id="cartOverlay" class="cart-overlay">
+        <div class="cart-header">
+            <h3>cart</h3>
+            <span id="closeCartBtn" class="close-btn">X</span>
+        </div>
+        <div id="cartItems" class="cart-items">
+            <!--products go here -->
+        </div>
+        <div class="cart-footer">
+            <p id="cartTotal">total: $0</p>
+            <a href="checkout.html"><button id="checkoutBtn">CHECK OUT</button></a>
+        </div>
+    </div>
+
+    <script src="script/script1.js"></script>
+    <script src="script/nav.js"></script>
+
+</body>
+
+</html>
