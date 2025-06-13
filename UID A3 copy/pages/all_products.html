@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>all products</title>
+    <link rel="stylesheet" href="style/navigation.css">
+    <link rel="stylesheet" href="style/browse.css">
+</head>
+
+<body>
+    <h1>all products</h1><br>
+
+    <!-- NAVIGATION MENU -->
+    <header>
+
+        <nav>
+            <button id="navBtn"></button>
+
+            <div id="navOverlay" class="nav-overlay">
+                <ul class="nav-links">
+                    <li><a href="home.html">home</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                    <li><a href="catalog.html">shop</a></li>
+                    <li><a href="search.html">search</a></li>
+                </ul>
+        </nav>
+
+    </header>
+
+    <div class="layout">
+        <aside class="sidebar">
+            <h2>categories</h2>
+            <ul>
+                <li><u><a href="all_products.html">all products</a></u></li>
+                <li><a href="garden.html">garden</a></li>
+                <li><a href="homewares.html">homewares</a></li>
+                <li><a href="indoor plants.html">indoor plants</a></li>
+                <li><a href="artisan.html">artisan</a></li>
+                <li><a href="gifting.html">gifting</a></li>
+            </ul>
+        </aside>
+
+        <div class="product-grid">
+            <button class="product product1" data-name="Enorme Jug" data-price="95" data-desc="Standing tall, this divine jug will 
+            showcase your dried arrangement, fresh flowers, water or stand proudly on her own!"
+                data-img="style/images/jug.png">
+                Enorme Jug
+            </button>
+
+            <button class="product product2" data-name="Relaxing Sleep Mist" data-price="35" data-desc="Aromatic botanicals designed to
+            help aid rest and relaxation." data-img="style/images/product2.png">
+                Relaxing Sleep Mist
+            </button>
+
+            <button class="product product3" data-name="Essential Oil" data-price="20" data-desc="Pure essential oil blend ideal
+             for diffusers and relaxation" data-img="style/images/product3.png">
+                Essential oil
+            </button>
+
+            <button class="product product4" data-name="Heart Soap" data-price="8"
+                data-desc="Rose scented heart shape soap." data-img="style/images/product4.png">
+                Heart Soap
+            </button>
+
+            <button class="product product5" data-name="Assorted Garden Pots" data-price="35" data-desc=""
+                data-img="style/images/product5.png">
+                Assorted Garden Pots
+            </button>
+
+            <button class="product product6" data-name="Dewit Gift Box Garden Tools" data-price="145"
+                data-desc="Premium gift set of Dutch made garden tools with wooden handles"
+                data-img="style/images/garden_tool.png">
+                Dewit Gift Box Garden Tools
+            </button>
+
+            <button class="product product7" data-name="Watering Can" data-price="45" data-desc="low stock!"
+                data-img="style/images/product7.png">
+                Watering Can
+            </button>
+
+            <button class="product product8" data-name="Pot Plant" data-price="35" data-desc="low stock!"
+                data-img="style/images/product8.png">
+                Pot Plant
+            </button>
+
+            <button class="product product9" data-name="Tenor Ceramic Pot" data-price="35"
+                data-desc="A minimalist ceramic pot. A stylish addition to any space!"
+                data-img="style/images/product9.png">
+                Tenor Ceramic Pot
+            </button>
+
+            <button class="product product10" data-name="Fish Painting" data-price="110" data-desc="low stock!"
+                data-img="style/images/product10.png">
+                Fish Painting
+            </button>
+
+            <button class="product product11" data-name="Pillow" data-price="55" data-desc="low stock!"
+                data-img="style/images/product11.png">
+                Pillow
+            </button>
+
+            <button class="product product12" data-name="Silas Jug" data-price="40" data-desc="low stock!"
+                data-img="style/images/product12.png">
+                Silas Jug
+            </button>
+
+        </div>
+    </div>
+
+    <p>365 products</p>
+
+    <!--product pop up-->
+    <div id="overlay" class="overlay">
+        <div class="overlay-content">
+            <span id="closeBtn" class="close-btn">X</span>
+            <div class="overlay-text">
+                <h2 id="overlayTitle">item title</h2>
+                <p id="overlayDescription">description</p>
+            </div>
+            <img id="overlayImage" src="" alt="product image" />
+            <button id="buyBtn">ADD TO CART</button>
+        </div>
+    </div>
+
+    <!-- cart pop up -->
+    <div id="cartOverlay" class="cart-overlay">
+        <div class="cart-header">
+            <h3>cart</h3>
+            <span id="closeCartBtn" class="close-btn">X</span>
+        </div>
+        <div id="cartItems" class="cart-items">
+            <!--products go here -->
+        </div>
+        <div class="cart-footer">
+            <p id="cartTotal">total: $0</p>
+            <a href="checkout.html"><button id="checkoutBtn">CHECK OUT</button></a>
+        </div>
+    </div>
+
+    <script src="script/script1.js"></script>
+    <script src="script/nav.js"></script>
+
+</body>
+
+</html>

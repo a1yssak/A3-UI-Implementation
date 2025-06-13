@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="stylesheet" href="style/info.css">
+    <link rel="stylesheet" href="style/navigation.css">
+</head>
+
+<body>
+    <h1>contact</h1><br>
+
+    <!-- NAVIGATION MENU -->
+    <header>
+
+        <nav>
+            <button id="navBtn"></button>
+
+            <div id="navOverlay" class="nav-overlay">
+                <ul class="nav-links">
+                    <li><a href="home.html">home</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                    <li><a href="catalog.html">shop</a></li>
+                    <li><a href="search.html">search</a></li>
+                </ul>
+        </nav>
+    </header>
+
+    <p>phone number: <br>0407 364 702<br><br>
+        email: <u>podandseed@gmail.com</u><br><br><br>
+        <b>get in touch:</b>
+    </p>
+
+    <form class="contact-form" action="#" method="post">
+        <input type="text" id="name" name="name" placeholder="Name" required />
+
+        <input type="email" id="email" name="email" placeholder="Email" required />
+
+        <textarea id="message" name="message" placeholder="Message" rows="5" required></textarea>
+
+        <button type="submit">SEND</button>
+    </form>
+
+    <script src="script/nav.js">
+    </script>
+</body>
+
+</html>

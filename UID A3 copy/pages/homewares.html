@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homewares</title>
+    <link rel="stylesheet" href="style/browse.css">
+    <link rel="stylesheet" href="style/navigation.css">
+</head>
+
+<body>
+    <h1>homewares</h1><br>
+
+    <!-- NAVIGATION MENU -->
+    <header>
+
+        <nav>
+            <button id="navBtn"></button>
+
+            <div id="navOverlay" class="nav-overlay">
+                <ul class="nav-links">
+                    <li><a href="home.html">home</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                    <li><a href="catalog.html">shop</a></li>
+                    <li><a href="search.html">search</a></li>
+                </ul>
+        </nav>
+
+    </header>
+    <div class="layout">
+        <aside class="sidebar">
+            <h2>categories</h2>
+            <ul>
+                <li><a href="all_products.html">all products</a></li>
+                <li><a href="garden.html">garden</a></li>
+                <u>
+                    <li><a href="homewares.html">homewares</a></li>
+                </u>
+                <li><a href="indoor plants.html">indoor plants</a></li>
+                <li><a href="artisan.html">artisan</a></li>
+                <li><a href="gifting.html">gifting</a></li>
+            </ul>
+        </aside>
+
+        <div class="product-grid">
+            <button class="product product37" data-name="Ceramic Jug" data-price="35"
+                data-desc="Handcrafted ceramic jug with a natural finish—perfect for water or floral arrangements"
+                data-img="style/images/37.png">
+                Ceramic Jug
+            </button>
+
+            <button class="product product1" data-name="Enorme Jug" data-price="95"
+                data-desc="Standing tall, this divine jug will showcase your dried arrangement, fresh flowers, water or stand proudly on her own!"
+                data-img="style/images/jug.png">
+                Enorme Jug
+            </button>
+
+            <button class="product product34" data-name="Landscape Pillow" data-price="110"
+                data-desc="Pillow featuring a scenic landscape print" data-img="style/images/10.png">
+                Landscape Pillow
+            </button>
+
+            <button class="product product10" data-name="Fish Painting" data-price="110" data-desc="SOLD OUT"
+                data-img="style/images/product9.png">
+                Fish Painting
+            </button>
+
+            <button class="product product38" data-name="Beeswax Food Wraps" data-price="20"
+                data-desc="Eco-friendly reusable beeswax wraps for food storage" data-img="style/images/38.png">
+                Beeswax Food Wraps
+            </button>
+
+            <button class="product product39" data-name="Bee Jar" data-price="28"
+                data-desc="Glass jar with bee embossing and a secure wooden lid" data-img="style/images/39.png">
+                Bee Jar
+            </button>
+
+            <button class="product product5" data-name="Assorted Garden Pots" data-price="35"
+                data-desc="Set of decorative garden pots in various sizes and finishes"
+                data-img="style/images/product5.png">
+                Assorted Garden Pots
+            </button>
+
+            <button class="product product8" data-name="Pot Plant" data-price="35"
+                data-desc="Lush indoor potted plant in a handmade ceramic pot" data-img="style/images/8.png">
+                Pot Plant
+            </button>
+
+            <button class="product product40" data-name="Bee Jug" data-price="45"
+                data-desc="Delicate ceramic jug adorned with a hand-painted bee design" data-img="style/images/40.png">
+                Bee Jug
+            </button>
+
+            <button class="product product41" data-name="Fig Themed Plate" data-price="48"
+                data-desc="Ceramic plate featuring a hand-illustrated fig design" data-img="style/images/41.png">
+                Fig Themed Plate
+            </button>
+
+            <button class="product product42" data-name="Bee Teacup" data-price="38"
+                data-desc="Charming teacup with bee motif, perfect for morning tea rituals"
+                data-img="style/images/42.png">
+                Bee Teacup
+            </button>
+
+            <button class="product product43" data-name="Magnifying Glass" data-price="45"
+                data-desc="Elegant vintage-style magnifying glass with brass detailing" data-img="style/images/43.png">
+                Magnifying Glass
+            </button>
+        </div>
+
+    </div>
+    </div>
+
+
+    <!--product pop up-->
+    <div id="overlay" class="overlay">
+        <div class="overlay-content">
+            <span id="closeBtn" class="close-btn">X</span>
+            <div class="overlay-text">
+                <h2 id="overlayTitle">item title</h2>
+                <p id="overlayDescription">description</p>
+            </div>
+            <img id="overlayImage" src="" alt="product image" />
+            <button id="buyBtn">ADD TO CART</button>
+        </div>
+    </div>
+
+    <!-- cart pop up -->
+    <div id="cartOverlay" class="cart-overlay">
+        <div class="cart-header">
+            <h3>cart</h3>
+            <span id="closeCartBtn" class="close-btn">X</span>
+        </div>
+        <div id="cartItems" class="cart-items">
+            <!--products go here -->
+        </div>
+        <div class="cart-footer">
+            <p id="cartTotal">total: $0</p>
+            <a href="checkout.html"><button id="checkoutBtn">CHECK OUT</button></a>
+        </div>
+    </div>
+
+    <script src="script/script1.js"></script>
+    <script src="script/nav.js"></script>
+
+</body>
+
+</html>
