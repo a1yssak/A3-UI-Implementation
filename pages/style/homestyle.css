@@ -1,0 +1,134 @@
+body {
+    background-image: url('images/home_back.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    background-color: #262623;
+    font-family: Helvetica, sans-serif;
+}
+
+
+h1.top {
+    position: relative;
+    color: #ffffff;
+    text-align: center;
+    font-size: 120px;
+    opacity: 0.65;
+    margin-top: 60x;
+    margin-bottom: 0.1px;
+}
+
+h1.bottom {
+    color: #ffffff;
+    text-align: center;
+    font-size: 120px;
+    opacity: 0.65;
+    margin-top: 0.1px;
+}
+
+
+h2 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 85px;
+    margin: 20px;
+}
+
+p {
+    color: #ffffff;
+    font-size: 16px;
+}
+
+section {
+    position: relative;
+    width: 280px;
+    padding-top: 1px;
+    padding-bottom: 50px;
+    margin: auto;
+    width: 70%;
+    border-radius: 50px;
+    text-align: center;
+    background-color: #262623;
+
+    button {
+        width: 130px;
+        height: 40px;
+        border-radius: 15px;
+        background-color: #D9D9D9;
+        border-color: #D9D9D9;
+        color: #ffffff;
+        font-size: 18px;
+    }
+
+}
+
+.slideshow {
+    display: none;
+}
+
+/* MOBILE */
+@media screen and (max-width: 390px) {
+    body {
+        background-image: url('images/home_back.jpg');
+        height: 250px;
+        border: #000000;
+        font-family: avenir;
+        background-blend-mode: none;
+    }
+
+    h1.top {
+        font-size: 80px;
+        padding: 20px;
+        margin-top: 90px;
+        line-height: 60px;
+        opacity: 1.0;
+    }
+
+    h1.bottom {
+        font-size: 20px;
+        margin-top: 2px;
+        opacity: 1.0;
+    }
+
+    h2 {
+        font-size: 32px;
+        margin: 10px;
+    }
+
+    p {
+        display: none;
+    }
+
+    section {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 400px;
+        height: 430px;
+        border-radius: 0;
+        border: #000000;
+        border-width: 30px;
+        background-image: url('images/artisan.png');
+        background-position: center;
+        background-size: cover;
+    }
+
+    section button {
+        color: transparent;
+        background-image: url('images/arrow.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 150px 150px;
+        background-color: transparent;
+        border: none;
+        padding: 100px;
+        text-indent: -500px;
+        margin-top: 150px;
+    }
+
+    h2 {
+        display: none;
+    }
+
+}

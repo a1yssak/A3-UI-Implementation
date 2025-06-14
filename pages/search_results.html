@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results</title>
+    <link rel="stylesheet" href="style/browse.css">
+    <link rel="stylesheet" href="style/navigation.css">
+    <link rel="stylesheet" href="style/search.css">
+    <link rel="stylesheet" href="style/cart.css">
+</head>
+
+<body>
+    <header>
+
+        <nav>
+            <button id="navBtn"></button>
+
+            <div id="navOverlay" class="nav-overlay">
+                <ul class="nav-links">
+                    <li><a href="home.html">home</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                    <li><a href="catalog.html">shop</a></li>
+                    <li><a href="search.html">search</a></li>
+                </ul>
+        </nav>
+
+        <div id="cartIcon" class="cart-icon"></div>
+
+    </header>
+
+    <h1>search for an item</h1>
+
+    <div class="search-result">
+        <input type="text" class="search-bar" placeholder="what are you looking for?" />
+        <button type="submit" class="icon-button" aria-label="Search"></button>
+    </div>
+
+    <p>120 results</p>
+
+    <div class="layout">
+        <aside class="sidebar">
+            <h2>sort results</h2>
+            <ul>
+                <li>price: ascending</li>
+                <li>price: descending</li>
+                <li>colour</li>
+                <li>alphabetically: A - Z</li>
+                <li>alphabetically: Z - A</li>
+            </ul>
+        </aside>
+
+        <div class="product-grid">
+            <button class="product product1" data-name="Enorme Jug" data-price="95" data-desc="Standing tall, this divine jug will 
+        showcase your dried arrangement, fresh flowers, water or stand proudly on her own!"
+                data-img="style/images/jug.png">
+
+            </button>
+
+            <button class="product product2" data-name="Relaxing Sleep Mist" data-price="35" data-desc="SOLD OUT"
+                data-img="style/images/product2.png">
+
+            </button>
+
+            <button class="product product3" data-name="Essential Oil" data-price="20" data-desc="SOLD OUT"
+                data-img="style/images/product3.png">
+
+            </button>
+
+            <button class="product product4" data-name="Heart Soap" data-price="8" data-desc="SOLD OUT"
+                data-img="style/images/product4.png">
+
+            </button>
+
+            <button class="product product5" data-name="Assorted Garden Pots" data-price="35" data-desc="SOLD OUT"
+                data-img="style/images/product5.png">
+
+            </button>
+
+            <button class="product product6" data-name="Dewit Gift Box Garden Tools" data-price="145"
+                data-desc="SOLD OUT" data-img="style/images/garden_tool.png">
+
+            </button>
+
+            <button class="product product7" data-name="Watering Can" data-price="45" data-desc="SOLD OUT"
+                data-img="style/images/product7.png">
+
+            </button>
+
+            <button class="product product8" data-name="Pot Plant" data-price="35" data-desc="SOLD OUT"
+                data-img="style/images/product8.png">
+
+            </button>
+
+            <h3><i>load more search results</i></h3>
+        </div>
+    </div>
+    <script src="script/nav.js"></script>
+    <script src="script/script1.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+    <link rel="stylesheet" href="style/browse.css">
+    <link rel="stylesheet" href="style/navigation.css">
+    <link rel="stylesheet" href="style/search.css">
+    <link rel="stylesheet" href="style/cart.css">
+
+</head>
+
+<body>
+    <header>
+
+        <nav>
+            <button id="navBtn"></button>
+
+            <div id="navOverlay" class="nav-overlay">
+                <ul class="nav-links">
+                    <li><a href="home.html">home</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                    <li><a href="catalog.html">shop</a></li>
+                    <li><a href="search.html">search</a></li>
+                </ul>
+        </nav>
+
+        <div id="cartIcon" class="cart-icon"></div>
+
+    </header>
+
+    <h1>search for an item</h1>
+
+    <form action="search_results.html" method="GET">
+        <input type="text" name="search" placeholder="what are you looking for?" />
+        <button type="submit" class="icon-button"></button>
+    </form>
+
+    <script src="script/search.js"></script>
+    <script src="script/nav.js"></script>
+    <script src="script/script1.js"></script>
+
+</body>
+
+</html>

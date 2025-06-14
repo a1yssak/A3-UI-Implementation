@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gifting</title>
+    <link rel="stylesheet" href="style/browse.css">
+    <link rel="stylesheet" href="style/navigation.css">
+    <link rel="stylesheet" href="style/cart.css">
+
+</head>
+
+<body>
+    <h1>gifting</h1><br>
+    <!-- NAVIGATION MENU -->
+    <header>
+
+        <nav>
+            <button id="navBtn"></button>
+
+            <div id="navOverlay" class="nav-overlay">
+                <ul class="nav-links">
+                    <li><a href="home.html">home</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                    <li><a href="catalog.html">shop</a></li>
+                    <li><a href="search.html">search</a></li>
+                </ul>
+        </nav>
+
+        <div id="cartIcon" class="cart-icon"></div>
+
+    </header>
+
+    <p id="productCount">54 Products</p>
+
+    <div class="layout">
+        <aside class="sidebar">
+            <h2>categories</h2>
+            <ul>
+                <li><a href="all_products.html">all products</a></li>
+                <li><a href="garden.html">garden</a></li>
+                <li><a href="homewares.html">homewares</a></li>
+                <li><a href="indoor plants.html">indoor plants</a></li>
+                <li><a href="artisan.html">artisan</a></li>
+                <u>
+                    <li><a href="gifting.html">gifting</a></li>
+                </u>
+            </ul>
+        </aside>
+
+        <div class="product-grid">
+            <button class="product product56" data-name="Scented Candle" data-price="28"
+                data-desc="Beautifully hand poured candle with a calming botanical fragrance"
+                data-img="style/images/56.png">
+                Scented Candle
+            </button>
+
+            <button class="product product3" data-name="Essential Oil" data-price="20"
+                data-desc="Pure essential oil blend ideal for diffusers and relaxation"
+                data-img="style/images/product3.png">
+                Essential Oil
+            </button>
+
+            <button class="product product33" data-name="Compass" data-price="35"
+                data-desc="Vintage style brass compass" data-img="style/images/9.png">
+                Compass
+            </button>
+
+            <button class="product product57" data-name="Reed Diffuser" data-price="32"
+                data-desc="Elegant reed diffuser releasing subtle, continuous scent into your space"
+                data-img="style/images/57.png">
+                Reed Diffuser
+            </button>
+
+            <button class="product product58" data-name="Rose Geranium & Patchouli Soap" data-price="14"
+                data-desc="Handcrafted botanical soap with floral and earthy aromas" data-img="style/images/58.png">
+                Rose Geranium & Patchouli Soap
+            </button>
+
+            <button class="product product35" data-name="Key Chain" data-price="12" data-desc=""
+                data-img="style/images/11.png">
+                Key Chain
+            </button>
+
+            <button class="product product59" data-name="Les Choses Simples Candle" data-price="45"
+                data-desc="Scented Candle" data-img="style/images/59.png">
+                Les Choses Simples Candle
+            </button>
+
+            <button class="product product60" data-name="Hand Cream & Soap Gift Set" data-price="35"
+                data-desc="Pampering set including nourishing hand cream and artisanal soap"
+                data-img="style/images/60.png">
+                Hand Cream & Soap Gift Set
+            </button>
+
+            <button class="product product2" data-name="Relaxing Sleep Mist" data-price="35"
+                data-desc="Aromatherapy spray to soothe the senses and promote rest"
+                data-img="style/images/product2.png">
+                Relaxing Sleep Mist
+            </button>
+
+            <button class="product product61" data-name="Illustrated Cosmetic Bag" data-price="38"
+                data-desc="Soft canvas bag with botanical illustrations, perfect for travel"
+                data-img="style/images/61.png">
+                Illustrated Cosmetic Bag
+            </button>
+
+            <button class="product product62" data-name="Eau De Parfum" data-price="55" data-desc="Men's Cologne"
+                data-img="style/images/62.png">
+                Eau De Parfum
+            </button>
+
+            <button class="product product6" data-name="Dewit Gift Box Garden Tools" data-price="145"
+                data-desc="Premium gift set of Dutch made garden tools with wooden handles"
+                data-img="style/images/garden_tool.png">
+                Dewit Gift Box Garden Tools
+            </button>
+
+
+        </div>
+    </div>
+
+    <!--product pop up-->
+    <div id="overlay" class="overlay">
+        <div class="overlay-content">
+            <span id="closeBtn" class="close-btn">X</span>
+            <div class="overlay-text">
+                <h2 id="overlayTitle">item title</h2>
+                <p id="overlayDescription">description</p>
+                <p id="overlayPrice">$0.00</p>
+            </div>
+            <img id="overlayImage" src="" alt="product image" />
+            <button id="buyBtn">ADD TO CART</button>
+        </div>
+    </div>
+
+    <!-- cart pop up -->
+    <div id="cartOverlay" class="cart-overlay">
+        <div class="cart-header">
+            <h3>cart</h3>
+            <span id="closeCartBtn" class="close-btn">X</span>
+        </div>
+        <div id="cartItems" class="cart-items">
+            <!--products go here -->
+        </div>
+        <div class="cart-footer">
+            <p id="cartTotal">total: $0</p>
+            <a href="checkout.html"><button id="checkoutBtn">CHECK OUT</button></a>
+        </div>
+    </div>
+
+    <script src="script/script1.js"></script>
+    <script src="script/nav.js"></script>
+
+</body>
+
+</html>

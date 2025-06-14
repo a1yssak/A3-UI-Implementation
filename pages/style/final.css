@@ -1,0 +1,18 @@
+body {
+    background-color: #262623;
+    font-family: helvetica;
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 70px;
+    margin-bottom: 100px;
+    margin-top: 220px;
+}
+
+h3 {
+    font-size: 20px;
+    text-align: center;
+    color: #ffffff;
+}
